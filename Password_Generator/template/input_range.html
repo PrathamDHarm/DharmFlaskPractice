@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range</title>
+</head>
+<body>
+    <h1>Printing Random Numbers</h1>
+    <form method="POST" action="/">
+        <!-- Range for number range -->
+        <label>Enter a number:</label>  
+        <input type="range" id="number_range" name="number_range" 
+               value="{{ number_range or 24 }}" 
+               min="1" max="100" 
+               oninput="this.nextElementSibling.value=this.value" 
+               required> 
+        <output>{{ number_range or 24 }}</output> 
+        <br><br>
+
+        <!-- Range for password length -->
+        <label>Length of the Password:</label>
+        <input type="range" id="length_password" name="length_password" 
+               value="{{ length_password or 2 }}" 
+               min="0" max="5" 
+               oninput="this.nextElementSibling.value=this.value" 
+               required>
+        <output>{{ length_password or 2 }}</output>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+        <!-- Conditionally display the generated password -->
+        {% if password %}
+        <p>Random Password Generated: {{ password }}</p>
+        {% endif %}
+    </form>
+</body>
+</html>
