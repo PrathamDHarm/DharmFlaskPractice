@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form method="POST" action="/Success"> <!-- Ensure action points to the correct route -->
+        <label for = "uemail">Email</label>
+        <input type="email" id="uemail" name="uemail" placeholder="email@gmail.com" required><br></br>
+
+        <label for="upassword">Password:</label>
+        <input type="password" id="upassword" name="upassword" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
