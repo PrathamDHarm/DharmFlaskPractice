@@ -21,7 +21,7 @@ class WebPage:
             print("Decoded Password:", decoded_password)
 
             # Store encoded password in the registered_data
-            registered_data[email] = {'Name': name, 'Password': decoded_password}
+            registered_data[email] = {'Name': name, 'Decode Password': decoded_password, 'Encoded password':encoded_password}
             print(registered_data)
 
             # Redirect to the login page with the username
