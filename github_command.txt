@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 The below GitHub commands are used to upload the updated data into the existing GitHub account
 
 
 
 git remote add origin https://github.com/PrathamDHarm/DharmFlaskPractice.git
 git branch -M master
+=======
+The below GitHub commands are used to upload the updated data into the existing GitHub account
+
+
+
+git remote add origin https://github.com/PrathamDHarm/DharmFlaskPractice.git
+git branch -M master
+>>>>>>> 3c7d0d8e91d26b54662bb326d170c6cf416c02c7
 git push -u origin master
