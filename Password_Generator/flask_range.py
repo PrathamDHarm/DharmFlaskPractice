@@ -16,6 +16,7 @@ def inp_rng():
         if x > 0:
             for _ in range(x):
                 # Randomly choose between a letter or number for password
+                #random_char = random.choice(string.ascii_letters+string.punctuation) + string.digits
                 random_char = random.choice(string.ascii_letters + string.digits)
                 l += random_char
             # Redirect to the display_num route with the generated password
